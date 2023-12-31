@@ -1,0 +1,81 @@
+.parent {
+    width: 100%;
+    height: auto;
+
+    .intro {
+        width: 80%;
+        height: 55vh;
+        margin: auto;
+        margin-top: 4rem;
+
+        .name,
+        .title {
+            display: flex;
+            justify-content: center;
+            height: 9.2vw;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+
+            p {
+                display: flex;
+                justify-content: center;
+
+                // background-color: red;
+                width: 50%;
+                position: relative;
+                top: 0%;
+                font-weight: 600;
+                font-size: 8vw;
+                line-height: normal;
+                letter-spacing: -0.6vw;
+                margin: auto;
+
+                @media screen and (max-width:425px) {
+                    width: 90vw;
+                    font-size: 14vw;
+                }
+
+            }
+
+            @media  screen and (max-width:426px) {
+                height: 10.5vw;
+                
+            }
+        }
+
+        .title {
+            p {
+                font-size: 6vw;
+                letter-spacing: -0.5vw;
+
+                @media screen and (max-width:425px) {
+                    font-size: 10.5vw;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .desc {
+            width: 45vw;
+            margin: auto;
+            margin-top: 3vw;
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.2vw;
+            }
+
+            @media screen and (max-width: 426px) {
+                margin-top: 14vw;
+                width: 70vw;
+
+                p{
+                    font-size: 1.6vw;
+                }
+            }
+        }
+
+    }
+}

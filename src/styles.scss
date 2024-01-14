@@ -16,7 +16,17 @@ body {
     margin: 0%;
 
     font-size: 16px;
-    font-family: 'Poppins', sans-serifs;
+    font-family: 'Poppins', sans-serif;
+
+    scroll-behavior: smooth;
+
+    scrollbar-color: transparent;
+    scrollbar-width: 0;
+
+    ::-webkit-scrollbar{
+        scrollbar-width: 0;
+        scrollbar-color: transparent;
+    }
 
 
     ::selection{

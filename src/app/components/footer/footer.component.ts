@@ -8,6 +8,16 @@ import { Playlist } from 'src/app/models/playlist';
 })
 export class FooterComponent {
 
+  constructor(){
+    const randomIndex = Math.floor(Math.random() * this.myPlaylist.length);
+    this.currentSong = this.myPlaylist[randomIndex];
+  }
+
+  currentSong!: Playlist;
+
+  openSongLink(songLink: string) {
+    window.open(songLink, '_blank');
+  }
 
   myPlaylist: Playlist[] = [
     {
@@ -122,7 +132,6 @@ export class FooterComponent {
       title: 'Heeriye',
       link: 'https://music.youtube.com/watch?v=SW2uyfNqHg4&si=RcoJ-azyA274KSs7'
     }
-
   ]
 
 }

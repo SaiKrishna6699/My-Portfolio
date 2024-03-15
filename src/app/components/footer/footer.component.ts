@@ -135,6 +135,10 @@ export class FooterComponent {
     {
       title: 'Avunanavaa',
       link: 'https://music.youtube.com/watch?v=L70qHh3Vzdc&si=LBtCctnuS0Yu91bK'
+    },
+    {
+      title: 'Adento Gani Unnapatugaa',
+      link: 'https://music.youtube.com/watch?v=-fapo-nHzxw&si=ldQeqRIR7ZvWcb8r'
     }
   ]
 

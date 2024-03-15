@@ -131,6 +131,10 @@ export class FooterComponent {
     {
       title: 'Heeriye',
       link: 'https://music.youtube.com/watch?v=SW2uyfNqHg4&si=RcoJ-azyA274KSs7'
+    },
+    {
+      title: 'Avunanavaa',
+      link: 'https://music.youtube.com/watch?v=L70qHh3Vzdc&si=LBtCctnuS0Yu91bK'
     }
   ]
 

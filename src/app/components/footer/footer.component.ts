@@ -8,12 +8,24 @@ import { Playlist } from 'src/app/models/playlist';
 })
 export class FooterComponent {
 
-  constructor(){
+  constructor() {
     const randomIndex = Math.floor(Math.random() * this.myPlaylist.length);
     this.currentSong = this.myPlaylist[randomIndex];
   }
 
   currentSong!: Playlist;
+
+  currentValue: number = 1;
+  lines: number[] = Array.from({ length: 24 }, (_, index) => index + 1);
+
+  updateLines(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    this.currentValue = parseInt(value);
+  }
+
+  getLineHeight(lineNumber: number): string {
+    return lineNumber <= this.currentValue ? '50px' : '20px'; // Change height based on current value
+  }
 
   openSongLink(songLink: string) {
     window.open(songLink, '_blank');

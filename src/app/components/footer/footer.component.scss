@@ -100,15 +100,17 @@ $slider-thumb-size: 50px;
     .row2{
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .range {
             width: 100%;
 
-            // -webkit-appearance: none;
-            // appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
             cursor: pointer;
-            // outline: none;
+
             overflow: hidden;
+            background: transparent;
             // background: repeating-linear-gradient(to right,
             //         $slider-thumb-color,
             //         $slider-thumb-color calc(5% / 25),
@@ -119,22 +121,21 @@ $slider-thumb-size: 50px;
             }
         }
 
-        .line{
-            width: 103%;
-            top: 10%;
-            left: 0.7%;
+        .lines{
+            width: 98.75%;
+            height: 40px;
 
-            position: relative;
-            height: 20px;
-            margin: auto;
-            background: repeating-linear-gradient(to right,
-            $slider-thumb-color,
-            $slider-thumb-color calc(5.5% / 24),
-            transparent calc(5.2% / 24),
-            transparent calc((100% / 24) * 1));
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .min-line{
+                width: 2.3px;
+                height: 40px;
+                background-color: $slider-thumb-color;
+            }
+            
         }
-
-
 
         #hrs {
             height: 100px;

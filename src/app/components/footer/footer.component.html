@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="row2">
-        <input type="range" min="1" max="24" step="1" value="1" name="range" class="range" id="range" list="hrs" />
+        <input type="range" min="1" max="24" step="1" value="1" name="range" class="range" id="range" list="hrs" (input)="updateLines($event)"/>
         <datalist id="hrs">
             <option value="0"></option>
             <option value="1"></option>
@@ -65,5 +65,33 @@
             <option value="24"></option>
         </datalist>
         <div class="line"></div>
+        <div class="lines">
+            <!-- <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div>
+            <div class="min-line"></div> -->
+            <div class="min-line" *ngFor="let line of lines" [class.active]="line <= currentValue" [style.height]="getLineHeight(line)"></div>
+
+        </div>
     </div>
 </div>

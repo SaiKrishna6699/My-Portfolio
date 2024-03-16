@@ -18,13 +18,16 @@ export class FooterComponent {
   currentValue: number = 1;
   lines: number[] = Array.from({ length: 24 }, (_, index) => index + 1);
 
-  updateLines(event: Event) {
-    const value = (event.target as HTMLInputElement).value;
-    this.currentValue = parseInt(value);
-  }
+  rangeValue = 1; // Initial value of the range input
 
-  getLineHeight(lineNumber: number): string {
-    return lineNumber <= this.currentValue ? '50px' : '20px'; // Change height based on current value
+  updateLines(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.rangeValue = Number(inputElement.value); // Update the rangeValue property
+  }
+  
+
+  generateArray(length: number): number[] {
+    return Array.from({ length }, (_, index) => index);
   }
 
   openSongLink(songLink: string) {

@@ -24,7 +24,32 @@ export class FooterComponent {
     const inputElement = event.target as HTMLInputElement;
     this.rangeValue = Number(inputElement.value); // Update the rangeValue property
   }
-  
+
+
+  getStepForCurrentTime(): number {
+    const currentDate = new Date();
+    const currentHour = currentDate.getHours();
+    let step = currentHour;
+
+    // Adjust step for 12-hour format (AM/PM)
+    if (step > 12) {
+      step -= 12;
+    }
+
+    // Map 12-hour format to 24-hour format
+    if (currentHour >= 12 && currentHour !== 24) {
+      step += 12;
+    }
+
+    // Special case for midnight (12AM)
+    if (currentHour === 0) {
+      step = 1;
+    }
+
+    console.log(step)
+
+    return step;
+  }
 
   generateArray(length: number): number[] {
     return Array.from({ length }, (_, index) => index);

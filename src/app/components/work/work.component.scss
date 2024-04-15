@@ -109,12 +109,17 @@
                 border-radius: 2rem;
 
                 transition: transform 0.5s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                // transition: box-shadow 1s ease-in-out;
 
                 &:hover {
-                    transform: scaleY(1.01);
+                    transform: scaleY(1.03);
                     box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.05);
                     transition: transform 0.5s ease-in-out;
-                    // transition: box-shadow 1s ease-in-out;
+                    // transition: box-shadow 1s ease-out;
                 }
 
                 p {
@@ -124,12 +129,24 @@
                     font-size: 1.05rem;
                     font-weight: 500;
                 }
+
+                h3{
+                    margin-top: -1rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-right: 2.7rem;
+                }
+
             }
 
             .project1,
             .project4 {
                 width: 65%;
                 background-color: rgb(208, 148, 229);
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
             }
 
             .project1 {

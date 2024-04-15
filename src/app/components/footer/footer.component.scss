@@ -51,18 +51,24 @@ $slider-thumb-size: 50px;
                     cursor: pointer;
 
                     .d1 {
-                        margin-top: 10px;
                         margin-left: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         svg {
-                            height: 45px;
-                            width: 45px;
+                            height: 4vw;
+                            width: 4vw;
                         }
                     }
 
                     .d2 {
-                        margin-top: 7px;
                         margin-left: 10px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
 
                         .line1 {
                             font-weight: 300;
@@ -93,11 +99,11 @@ $slider-thumb-size: 50px;
                             margin-bottom: 1.8rem;
                             cursor: pointer;
 
-                            &:hover{
+                            &:hover {
                                 color: darken($color: $slider-thumb-color, $amount: 0.5);
                             }
 
-                            &.spl-link{
+                            &.spl-link {
                                 font-weight: 600;
                             }
                         }

@@ -62,7 +62,7 @@
                     border-radius: 45% 45% 0 0;
                 }
 
-                .youtube{
+                .youtube {
                     position: relative;
                     margin-top: -6.22vw;
                     display: flex;
@@ -83,6 +83,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         svg {
                             height: 4vw;
                             width: 4v;
@@ -127,7 +128,7 @@
 
     .exp {
         width: 90%;
-        height: 50vw;
+        height: auto;
         padding: 1vw;
         margin: auto;
 
@@ -159,11 +160,11 @@
                 margin-right: 30vw;
             }
 
-            &.exp3{
+            &.exp3 {
                 width: 70vw;
             }
 
-            &.exp4{
+            &.exp4 {
                 width: 40vw;
                 margin-right: 50vw;
             }
@@ -199,5 +200,20 @@
             }
 
         }
+    }
+
+    .edu {
+        width: 45vw;
+        max-width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 3vw;
+        margin-top: 2vw;
+
+        font-size: 1.4vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
